@@ -42,5 +42,32 @@ public class HrAppNewEmployeePage {
     public List<WebElement> lastNames;
 
 
+//
+//    @FindBy(xpath = "/html/body/app-root/div[1]/app-employee-details/div[3]/table/tbody[2]/tr/td[2]")
+//    public WebElement steven;
+//
+//    @FindBy(xpath = "/html/body/app-root/div[1]/app-employee-details/div[3]/table/tbody[2]/tr/td[3]")
+//    public WebElement king;
+//
+//    @FindBy(xpath = "/html/body/app-root/div[1]/app-employee-details/div[3]/table/tbody[2]/tr/td[4]")
+//    public WebElement departmentName;
+
+
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-employee-details/div[2]/input")
+    public WebElement searchBox;
+
+    @FindBy(id = "searchButton")
+    public WebElement Search;
+
+    @FindBy (xpath = "//td[2]")
+    public WebElement stevenName;
+
+    @FindBy (xpath = "//td[3]")
+    public WebElement kingLastname;
+
+    @FindBy (xpath = "//td[4]")
+    public WebElement departmentName;
+
+
 
 }
